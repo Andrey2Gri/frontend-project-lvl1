@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { askName, toGreet } from '../src/index.js';
+import { toGreet, getName } from '../src/index.js';
 
-const name = askName();
-toGreet(name);
+toGreet(getName());
