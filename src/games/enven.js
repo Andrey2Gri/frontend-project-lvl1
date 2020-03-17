@@ -1,4 +1,4 @@
-import { main, getRandomNumber } from '../index.js';
+import { run, getRandomNumber } from '../index.js';
 
 const isEven = (num) => num % 2 === 0;
 const brainEven = () => {
@@ -8,4 +8,4 @@ const brainEven = () => {
   return [correctAnswer, question];
 };
 
-export default () => main(brainEven, 'Answer "yes" if the number is even, otherwise answer "no".');
+export default () => run(brainEven, 'Answer "yes" if the number is even, otherwise answer "no".');

@@ -4,7 +4,7 @@ export const getName = () => readlineSync.question('May I have your name? ');
 export const toGreet = (name) => console.log(`Hello, ${name}`);
 export const getRandomNumber = (max) => Math.floor(Math.random() * max);
 
-export const main = (game, task) => {
+export const run = (game, task) => {
   console.log('Welcome to the Brain Games!');
   const name = getName();
   toGreet(name);

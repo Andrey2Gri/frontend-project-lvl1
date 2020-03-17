@@ -1,4 +1,15 @@
-import { main, getRandomNumber } from '../index.js';
+import { run, getRandomNumber } from '../index.js';
+
+const getResultOperation = (operation, num1, num2) => {
+  switch (operation) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    default:
+      return num1 * num2;
+  }
+};
 
 const brainCalc = () => {
   const number1 = getRandomNumber(100);
@@ -6,17 +17,9 @@ const brainCalc = () => {
   const operations = ['+', '-', '*'];
   const operation = operations[getRandomNumber(3)];
   const question = `${number1} ${operation} ${number2}`;
-  let correctAnswer;
-  switch (operation) {
-    case '+':
-      correctAnswer = number1 + number2;
-      break;
-    case '-':
-      correctAnswer = number1 - number2;
-      break;
-    default:
-      correctAnswer = number1 * number2;
-  }
+  const correctAnswer = getResultOperation(operation, number1, number2);
+
   return [String(correctAnswer), question];
 };
-export default () => main(brainCalc, 'What is the result of the expression?');
+
+export default () => run(brainCalc, 'What is the result of the expression?');

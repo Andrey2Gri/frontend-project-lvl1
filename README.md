@@ -10,3 +10,7 @@
 ### brain-calc
 **_npm install brain-calc_**
 [![asciicast](https://asciinema.org/a/6ymQtTgGq5q3Kc7CN4P5ZZUNq.svg)](https://asciinema.org/a/6ymQtTgGq5q3Kc7CN4P5ZZUNq?speed=4)
+
+### brain-gcd
+**_npm install brain-gcd**
+[![asciicast](https://asciinema.org/a/6ymQtTgGq5q3Kc7CN4P5ZZUNq.svg)](https://asciinema.org/a/6ymQtTgGq5q3Kc7CN4P5ZZUNq?speed=4)
