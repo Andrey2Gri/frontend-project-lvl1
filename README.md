@@ -13,4 +13,8 @@
 
 ### brain-gcd
 **_npm install brain-gcd**
-[![asciicast](https://asciinema.org/a/6ymQtTgGq5q3Kc7CN4P5ZZUNq.svg)](https://asciinema.org/a/6ymQtTgGq5q3Kc7CN4P5ZZUNq?speed=4)
+[![asciicast](https://asciinema.org/a/aAUSGFDHB6cAAGtfWH2OXVFkq.svg)](https://asciinema.org/a/aAUSGFDHB6cAAGtfWH2OXVFkq?speed=4)
+
+### brain-progression
+**_npm install brain-progression**
+[![asciicast](https://asciinema.org/a/fGpIz6G4RWiduhcLe8Gbea3pU.svg)](https://asciinema.org/a/fGpIz6G4RWiduhcLe8Gbea3pU?speed=4)
