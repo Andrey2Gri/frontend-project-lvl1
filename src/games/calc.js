@@ -11,7 +11,7 @@ const getResultOperation = (operation, num1, num2) => {
   }
 };
 
-const brainCalc = () => {
+const gameGenerate = () => {
   const number1 = getRandomNumber(100);
   const number2 = getRandomNumber(100);
   const operations = ['+', '-', '*'];
@@ -19,7 +19,7 @@ const brainCalc = () => {
   const question = `${number1} ${operation} ${number2}`;
   const correctAnswer = getResultOperation(operation, number1, number2);
 
-  return [String(correctAnswer), question];
+  return [correctAnswer, question];
 };
 
-export default () => run(brainCalc, 'What is the result of the expression?');
+export default () => run(gameGenerate, 'What is the result of the expression?');
