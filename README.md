@@ -4,21 +4,16 @@
 
 
 ## brain-even
-**_npm install brain-even_**
-[![asciicast](https://asciinema.org/a/p06XkDDMGxX3QPsGWWLZHidV2.svg)](https://asciinema.org/a/p06XkDDMGxX3QPsGWWLZHidV2?speed=4)
+[![asciicast](https://asciinema.org/a/h6AMQ4PgjY9JKhaYKAaCAfQsI.svg)](https://asciinema.org/a/h6AMQ4PgjY9JKhaYKAaCAfQsI?speed=4)
 
 ## brain-calc
-**_npm install brain-calc_**
-[![asciicast](https://asciinema.org/a/6ymQtTgGq5q3Kc7CN4P5ZZUNq.svg)](https://asciinema.org/a/6ymQtTgGq5q3Kc7CN4P5ZZUNq?speed=4)
+[![asciicast](https://asciinema.org/a/IlyzQ5MqBeKtiua4b7VxbMLRa.svg)](https://asciinema.org/a/IlyzQ5MqBeKtiua4b7VxbMLRa?speed=4)
 
 ## brain-gcd
-**_npm install brain-gcd**
-[![asciicast](https://asciinema.org/a/aAUSGFDHB6cAAGtfWH2OXVFkq.svg)](https://asciinema.org/a/aAUSGFDHB6cAAGtfWH2OXVFkq?speed=4)
+[![asciicast](https://asciinema.org/a/l8yvi6nd3qO6cWLSl67XS1kJs.svg)](https://asciinema.org/a/l8yvi6nd3qO6cWLSl67XS1kJs?speed=4)
 
 ## brain-progression
-**_npm install brain-progression**
-[![asciicast](https://asciinema.org/a/fGpIz6G4RWiduhcLe8Gbea3pU.svg)](https://asciinema.org/a/fGpIz6G4RWiduhcLe8Gbea3pU?speed=4)
+[![asciicast](https://asciinema.org/a/tmmF3W65I0rcTWX181dea1J2G.svg)](https://asciinema.org/a/tmmF3W65I0rcTWX181dea1J2G?speed=4)
 
 ## brain-prime
-**_npm install brain-prime**
 [![asciicast](https://asciinema.org/a/uSqcX5zE96M5LDvzxgsk7JoGf.svg)](https://asciinema.org/a/uSqcX5zE96M5LDvzxgsk7JoGf?speed=4)
