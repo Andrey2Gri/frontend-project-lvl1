@@ -1,8 +1,9 @@
-import { run, getRandomNumber } from '../index.js';
+import run from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const buildProgression = () => {
-  const startNumber = getRandomNumber(10);
-  const step = getRandomNumber(10) + 1;
+  const startNumber = getRandomNumber(0, 10);
+  const step = getRandomNumber(0, 10) + 1;
   const result = [startNumber];
   while (result.length < 10) {
     const lastElement = result[result.length - 1];
@@ -20,7 +21,7 @@ const getQuestion = (numbers, index) => {
 
 const brainProgression = () => {
   const progression = buildProgression();
-  const index = getRandomNumber(10);
+  const index = getRandomNumber(0, 9);
   const question = getQuestion(progression, index);
   const correctAnswer = getElement(progression, index);
   return [String(correctAnswer), question];
