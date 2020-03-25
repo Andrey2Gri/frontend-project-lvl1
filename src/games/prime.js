@@ -13,11 +13,13 @@ const isPrime = (number) => {
   return true;
 };
 
-const gameGenerate = () => {
+const genGame = () => {
   const number = getRandomNumber(0, 100);
   const question = String(number);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
-  return [String(correctAnswer), question];
+  return [correctAnswer, question];
 };
 
-export default () => run(gameGenerate, 'Answer "yes" if given number is prime. Otherwise answer "no".');
+const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+export default () => run(genGame, gameRule);

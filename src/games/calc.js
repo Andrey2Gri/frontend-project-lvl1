@@ -1,10 +1,11 @@
 import run from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const operations = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
+const lengthOperator = operators.length - 1;
 
-const getResultOperation = (operation, num1, num2) => {
-  switch (operation) {
+const calculate = (operator, num1, num2) => {
+  switch (operator) {
     case '*':
       return num1 * num2;
     case '+':
@@ -12,18 +13,20 @@ const getResultOperation = (operation, num1, num2) => {
     case '-':
       return num1 - num2;
     default:
-      throw new Error(`Unknown operation: '${operation}'!`);
+      throw new Error(`Unknown operation: '${operator}'!`);
   }
 };
 
-const gameGenerate = () => {
+const genGame = () => {
   const number1 = getRandomNumber(0, 100);
   const number2 = getRandomNumber(0, 100);
-  const operation = operations[getRandomNumber(0, 2)];
-  const question = `${number1} ${operation} ${number2}`;
-  const correctAnswer = getResultOperation(operation, number1, number2);
+  const operator = operators[getRandomNumber(0, lengthOperator)];
+  const question = `${number1} ${operator} ${number2}`;
+  const correctAnswer = calculate(operator, number1, number2);
 
   return [String(correctAnswer), question];
 };
 
-export default () => run(gameGenerate, 'What is the result of the expression?');
+const gameRule = 'What is the result of the expression?';
+
+export default () => run(genGame, gameRule);
