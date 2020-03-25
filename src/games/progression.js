@@ -1,5 +1,5 @@
 import run from '../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 const progressionSize = 10;
 
