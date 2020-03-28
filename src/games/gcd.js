@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandomNumber } from '../utils.js';
+import getRandomNumber from '../utils.js';
 
 const gcd = (num1, num2) => {
   if (num2 === 0) {
@@ -8,7 +8,7 @@ const gcd = (num1, num2) => {
   return gcd(num2, num1 % num2);
 };
 
-const genGame = () => {
+const genGameData = () => {
   const number1 = getRandomNumber(0, 100);
   const number2 = getRandomNumber(0, 100);
   const question = `${number1} ${number2}`;
@@ -16,6 +16,6 @@ const genGame = () => {
   return [String(correctAnswer), question];
 };
 
-const gameRule = 'Find the greatest common divisor of given numbers.';
+const task = 'Find the greatest common divisor of given numbers.';
 
-export default () => run(genGame, gameRule);
+export default () => run(genGameData, task);

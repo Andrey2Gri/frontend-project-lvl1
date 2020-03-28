@@ -1,13 +1,11 @@
 import run from '../index.js';
-import { getRandomNumber } from '../utils.js';
+import getRandomNumber from '../utils.js';
 
-const progressionSize = 10;
+const progressionLength = 10;
 
-const buildProgression = () => {
-  const startNumber = getRandomNumber(0, 10);
-  const step = getRandomNumber(0, 10) + 1;
+const buildProgression = (startNumber, step, length) => {
   const progression = [startNumber];
-  while (progression.length < progressionSize) {
+  while (progression.length < length) {
     const lastElement = progression[progression.length - 1];
     progression.push(lastElement + step);
   }
@@ -20,14 +18,18 @@ const getQuestion = (progression, index) => {
   return newProgression.join(', ');
 };
 
-const genGame = () => {
-  const progression = buildProgression();
-  const index = getRandomNumber(0, progressionSize - 1);
-  const question = getQuestion(progression, index);
-  const correctAnswer = progression[index];
+const genGameData = () => {
+  const progression = buildProgression(
+    getRandomNumber(0, 10),
+    getRandomNumber(1, 10),
+    progressionLength,
+  );
+  const hiddenElementIndex = getRandomNumber(0, progressionLength - 1);
+  const question = getQuestion(progression, hiddenElementIndex);
+  const correctAnswer = progression[hiddenElementIndex];
   return [String(correctAnswer), question];
 };
 
-const gameRule = 'What number is missing in the progression?';
+const task = 'What number is missing in the progression?';
 
-export default () => run(genGame, gameRule);
+export default () => run(genGameData, task);
